@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+set timeout -1
+set my_token "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"
+spawn git push -u origin main
+expect "Password for 'https://Joe-44@github.com':"
+send -- $my_token\r
+expect eof

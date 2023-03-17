@@ -1,0 +1,16 @@
+#!/bin/bash
+path="0x00-hello_world"
+echo "root dir = ./$path"
+echo Give me a file name:
+read name
+echo Write script:
+read script
+cat << EOF > $path/$name
+#!/bin/bash
+$script
+EOF
+chmod 744 $path/$name
+git add $path/$name
+git commit -m "create $name"
+echo "start uploding ..."
+./upload
