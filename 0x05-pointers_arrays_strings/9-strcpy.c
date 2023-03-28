@@ -10,8 +10,8 @@
  * Return: pointer to dest
  */
 char *_strcpy(char *dest, char *src)
-Char *c
 {
+	char *c
 	char *aux = dest;
 
 	while (*src)
