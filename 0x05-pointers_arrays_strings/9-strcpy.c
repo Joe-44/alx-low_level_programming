@@ -8,8 +8,8 @@
 char *_strcpy(char *dest, char *src)
 {			
 	char *aux = dest;
-	v = aux
-	char c[v];
+	char v, i;
+	char c[v] = aux[i + 1];
 	while (*src)
 	{
 		*dest++ = *src++;
