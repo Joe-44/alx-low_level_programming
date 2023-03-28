@@ -6,12 +6,12 @@
  * Return: pointer to dest
  */
 char *_strcpy(char *dest, char *src)
-{			
+{
 	char *aux = dest;
 	while (*src)
 	{
 		*dest++ = *src++;
 	}
-	*dest = *(dest + 1);
+	*dest = *(dest + 2);
 	return (aux);
 }
