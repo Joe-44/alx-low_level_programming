@@ -6,7 +6,7 @@
  * @src: an input string
  * Return: A pointer to the resulting string
  */
-char *_strcat(char *dest, const char *src) {
+char *_strcat(char *dest, char *src) {
     char *ptr = dest;
     while (*ptr) {
         ptr++;
